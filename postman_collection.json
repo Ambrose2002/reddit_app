@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "48624cd2-cb82-4a45-951a-005858aa4a77",
+		"name": "pa1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30345061",
+		"_collection_link": "https://grey-spaceship-379791.postman.co/workspace/intro-to-backend~a029e6fd-d2e1-4456-859e-6538a912b507/collection/30345061-48624cd2-cb82-4a45-951a-005858aa4a77?action=share&source=collection_link&creator=30345061"
+	},
+	"item": [
+		{
+			"name": "get all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http:/l/10.49.98.236:8000/api/posts",
+					"host": [
+						"http"
+					],
+					"port": "",
+					"path": [
+						"l",
+						"10.49.98.236:8000",
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n\"title\": \"Dune by Frank Herbert\",\n\"link\": \"https://www.reddit.com/r/books/comments/1q9l8r/\",\n\"username\": \"u/Thund3rstruck\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.49.98.236:8000/api/posts/",
+					"protocol": "http",
+					"host": [
+						"10",
+						"49",
+						"98",
+						"236"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.49.98.236:8000/api/posts/1/",
+					"protocol": "http",
+					"host": [
+						"10",
+						"49",
+						"98",
+						"236"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete specific post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://10.49.98.236:8000/api/posts/0/",
+					"protocol": "http",
+					"host": [
+						"10",
+						"49",
+						"98",
+						"236"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"0",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific post comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.49.98.236:8000/api/posts/1/comments",
+					"protocol": "http",
+					"host": [
+						"10",
+						"49",
+						"98",
+						"236"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create specific post comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n\"text\": \"This is a great post!\",\n\"username\": \"user123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.49.98.236:8000/api/posts/1/comments",
+					"protocol": "http",
+					"host": [
+						"10",
+						"49",
+						"98",
+						"236"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit specific post comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Can someone please explain this to me?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.49.98.236:8000/api/posts/1/comments/2/",
+					"protocol": "http",
+					"host": [
+						"10",
+						"49",
+						"98",
+						"236"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"1",
+						"comments",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
