@@ -1,7 +1,3 @@
-Name: Ambrose Blay
-NetID: ab2838
+Author: Ambrose Blay
 
-Challenges Attempted: Tier I
-
-Difficulties: None
-Comments: None
+This is a Reddit style community forum where people can make posts and make comments on posts.
